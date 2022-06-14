@@ -4,410 +4,291 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trvello</title>
-    
+    <title>Studio GHIBLI</title>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald&family=Poppins:wght@400;500;600&family=Raleway:wght@500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Nunito:wght@400;500&family=Podkova:wght@400;500&display=swap');
 
         * {
             margin: 0;
             padding: 0;
             text-decoration: none;
             box-sizing: border-box;
+            font-family: 'Podkova', serif;
+        }
+        
+        body {
+            background-image: url(img/back1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
+        img {
+            border-radius: 8px;
+        }
 
 
         .container {
-            position: relative;
             width: 1200px;
-            margin: 188px auto 200px auto;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
-        .scrollbar {
-            width: 300px;
-            height: 12px;
-            border-radius: 8px;
-            background-color: #b4e7ffd2;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-
-        section {
-            width: 100%;
-        }
-        section:not(:last-child) {
-            margin-bottom: 144px;
-        }
-
-        
-        .first {
-            display: flex;
-        }
-
-        .first svg {
-            position: absolute;
-            top: 380px;
-            right: 580px;
-            cursor: pointer;
-        }
-
-        .first .textzone {
-            width: 454px;
-            margin-right: 59px;
-            padding-top: 60px;
-        }
-        .first .textzone h1 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 150%;
-            color: #333;
-        }
-        .first .textzone p {
-            font-family: 'Lato', sans-serif;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 150%;
+        h1 {
+            font-size: 60px;
+            font-weight: 400;
             color: #444;
-            margin: 52px 0px;
-        }
-        .first .textzone a {
-            font-family: 'Raleway', sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            color: #888;
-            padding: 4px 36px;
-            background-color: #b4e7ffd2;
-            border: 0.5px solid #9999991f;
-            border-radius: 4px;
-            transition: all 0.3s ease-in-out;
-        }
-        .first .textzone a:hover {
-            box-shadow: 0px 0px 8px #999;
-        }
-
-        .first .imgzone {
-            width: 687px;
-        }
-
-
-        .second {
-            display: flex;
-            justify-content: center;
-        }
-
-        .second .imgzone {
-            width: 410px;
-            margin-right: 60px;
-        }
-        
-        .second .textzone {
-            width: 379px;
-        }
-        .second .textzone h2 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 40px;
-            font-weight: 500;
-            line-height: 130%;
-            color: #333;
-            margin-bottom: 52px;
-            padding-top: 40px;
-        }
-        .second .textzone p {
-            font-family: 'Lato', sans-serif;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 150%;
-            color: #444;
-        }
-
-
-        .third {
             text-align: center;
+            margin-top: 160px;
+            margin-bottom: 160px;
         }
 
-        .third .textzone {
+
+        .text {
             width: 790px;
-            margin: 52px auto 0px auto;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .third .textzone p {
-            font-family: 'Lato', sans-serif;
+        .text p {
+            font-family: 'Nunito', sans-serif;
             font-size: 18px;
             font-weight: 500;
-            line-height: 150%;
-            color: #444;
+            line-height: 170%;
+            color: #55678a;
             text-align: justify;
         }
 
 
-        .fourth {
-            text-align: center;
-            padding: 44px 20px 32px 20px;
-            transition: all 0.3s ease-in-out;
+        .contentzone {
+            width: 1055px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 248px;
+            margin-bottom: 320px;
         }
-        .fourth:hover {
-            background-color: #b4e7ff44;
-            border-radius: 16px;
+        .contentbox {
+            width: 100%;
         }
-        
-        .fourth h3 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 36px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 52px;
-        }
-        .fourth> p {
-            font-family: 'Raleway', sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 180%;
-            color: #444;
-            margin-bottom: 112px;
+        .contentbox:not(:last-child) {
+            margin-bottom: 200px;
         }
 
-        .fourth .ticketzone {
+
+        .titlezone {
+            text-align: right;
+            margin-bottom: 56px;
+        }
+        .titlezone-second {
+            text-align: left;
+        }
+        .titlezone h2 {
+            display: inline;
+            font-size: 40px;
+            font-weight: 500;
+            padding-top: 8px;
+        }
+        .titlezone .h2-first {
+            color: #615742;
+            border-top: 1px solid #8677577e;
+        }
+        .titlezone .h2-second {
+            color: #517e73;
+            border-top: 1px solid #517e737e;
+        }
+        .titlezone .h2-third {
+            color: #55678a;
+            border-top: 1px solid #55678a7e;
+        }
+        .titlezone h3 {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #555;
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+        .titlezone span {
+            font-family: 'Nunito', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        
+        .firstbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 48px;
+        }
+        .detailzone-third .firstbox {
+            align-items: initial;
+        }
+        .secondbox {
             display: flex;
             justify-content: space-between;
         }
-
-        .fourth .ticketbox {
-            width: 278px;
-            height: 356px;
-            background-color: #f7f7f7;
-            border-radius: 16px;
-            box-shadow: 2px 4px 8px #99999954;
-            font-family: 'Lato', sans-serif;
-            margin-bottom: 52px;
-        }
-        .fourth .ticketbox p {
-            font-size: 18px;
-            font-weight: 600;
-            color: #555;
-            margin-top: 20px;
-            margin-bottom: 14px;
-        }
-        .fourth .ticketbox .date {
-            font-size: 14px;
-            font-weight: 500;
-            color: #444;
-        }
-        .fourth .ticketbox .price {
-            font-size: 16px;
-            font-weight: 600;
-            color: #333;
-            margin-top: 40px;
-            display: block;
+        .detailzone-second .secondbox {
+            justify-content: baseline;
         }
 
-        .fourth .more {
-            font-family: 'Raleway', sans-serif;
-            font-size: 16px;
-            font-weight: 600;
-            color: #888;
-            padding: 4px 36px;
-            background-color: #b4e7ffd2;
-            border: 0.5px solid #9999991f;
-            border-radius: 4px;
+
+        .detailzone-first .firstbox img:nth-child(1) {
+            height: 292px;
+        }
+        .detailzone-second .firstbox img:nth-child(2) {
+            height: 336px;
+        }
+
+
+        .about {
+            padding: 20px 24px;
             transition: all 0.3s ease-in-out;
         }
-        .fourth .more:hover {
-            box-shadow: 0px 0px 8px #999;
-        }
-           
 
+        .about-first {
+            width: 440px;
+        }
+        .about-first:hover {
+            border-radius: 8px;
+            background-color: #e7e5e0;
+        }
+        .about-second {
+            width: 645px;
+        }
+        .about-second:hover {
+            border-radius: 8px;
+            background-color: #e1e9e7;
+        }
+        .about-third {
+            width: 439px;
+        }
+        .about-third:hover {
+            border-radius: 8px;
+            background-color: #e1e8f5;
+        }
+
+        .about p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 160%;
+            color: #333;
+            text-align: justify;
+        }
+
+        
         footer {
             width: 100%;
             height: 160px;
-            background-color: #b4e7ffd2;
+            background-color: #e7ded3;
             text-align: center;
         }
         footer a img {
             width: 24px;
             margin-top: 44px;
+            border-radius: 0px;
         }
         footer a:not(:last-child) {
             margin-right: 20px;
         }
         footer p {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Nunito', sans-serif;
             font-size: 14px;
             font-weight: 500;
             color: #333;
             margin-top: 24px;
-        }
-
-
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="scrollbar"></div>
+        <h1>Masterpiece of GHIBLI</h1>
+
+        <div class="text">
+            <p>&nbsp;Studio Ghibli's animation is popular with all adults and children. Not only a solid story, but also a gem-like OST evokes innocence in everyone's hearts. Ghibli's unique beautiful colors and novel themes that evolve with the times are also the secret of "Long Run."</p>
+        </div>
 
 
-        <section class="first">
-            <svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_176_152)">
-                <circle cx="76" cy="76" r="60" fill="white" fill-opacity="0.7"/>
-                <path d="M100 76L64 96.7846V55.2154L100 76Z" fill="#678ABC"/>
-                </g>
-                <defs>
-                <filter id="filter0_d_176_152" x="0" y="0" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                <feOffset/>
-                <feGaussianBlur stdDeviation="8"/>
-                <feComposite in2="hardAlpha" operator="out"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_176_152"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_176_152" result="shape"/>
-                </filter>
-                </defs>
-            </svg>                                
+        <div class="contentzone">
+            <div class="contentbox">
+                <div class="titlezone">
+                    <h2 class="h2-first">Howl's Moving Castle</h2>
+                    <h3>하울의 움직이는 성</h3>
+                    <span>2004</span>
+                </div>
 
-            <div class="textzone">
-                <h1>Sea kayaking<br>in Alaska</h1>
-                <p>&nbsp;Kayak is an activity that can be enjoyed<br>
-                    in the jungle or in Southeast Asian resorts.<br>
-                    But what if there's a kayak that you can enjoy cooler? How about a kayak in Alaska?<br>
-                    The name Alaska gives you a cool vibe.
-                </p>
-                <a href="#">MORE</a>
-            </div>
-
-            <div class="imgzone">
-                <img src="img/알래스카1.png" alt="">
-            </div>
-        </section>
-
-
-        <section class="second">
-            <div class="imgzone">
-                <img src="img/알래스카2.png" alt="">
-            </div>
-
-            <div class="textzone">
-                <h2>Popular<br>
-                    Place Around<br>
-                    The World</h2>
-                <p>&nbsp;A state in northwestern United States where the day starts last in the world In particular, there is a small island called Attu, which is the westernmost of all continents and islands. It is the northernmost and westernmost state. It is home to Inuit. The name Alaska is derived from the Aleutian word "Alaxxaq," which means "land, not an island."</p>
-            </div>
-        </section>
-
-
-        <section class="third">
-            <div class="imgzone">
-                <img src="img/알래스카3.png" alt="">
-            </div>
-
-            <div class="textzone">
-                <p>&nbsp;To be able to see the beautiful scenery and glaciers in front of you while kayaking, it must be different from kayaking in hot travel destinations, right? You can also kayak up to the giant glacier and touch it yourself. You will fall in love with the beautiful colors of glaciers twice.</p>
-            </div></section>
-
-
-        <section class="fourth">
-            <h3>ticket</h3>
-            <p>&nbsp;Row around the magnificent iceberg and climb to Spencer Glacier Terminal.<br>
-                Enjoy hiking in the gravel glacier moraine and get close to the glacier's blue ice.</p>
-            
-            <div class="ticketzone">
-                <a href="#">
-                    <div class="ticketbox">
-                        <img src="img/티켓1.png" alt="">
-                        <p>Enjoy kayaking in Alaska<br>and feel happiness</p>
-                        <span class="date">2022.6.14 ~ 2022.7.15</span>
-                        <span class="price">$520</span>
+                <div class="detailzone-first">
+                    <div class="firstbox">
+                        <img src="img/하울1.png" alt="">
+                        <img src="img/하울2.png" alt="">
                     </div>
-                </a>
-
-                <a href="#">
-                    <div class="ticketbox">
-                        <img src="img/티켓2.png" alt="">
-                        <p>Experience kayaking<br>on glaciers!</p>
-                        <span class="date">2022.6.14 ~ 2022.7.15</span>
-                        <span class="price">$470</span>
+                    <div class="secondbox">
+                        <img src="img/하울3.png" alt="">
+                        <div class="about about-first">
+                            <p>&nbsp;&nbsp;It is a 2004 animated feature film by Ghibli Studios, directed by Japanese master animator Hayao Miyazaki. It is based on a fantasy novel of the same name by British novelist Diana Win Jones. It is one of the most famous and well-known works of Ghibli, ranking sixth in Japanese box office revenue and third in global box office rankings.
+                                The OST is so good that a movie can be described as an OST. When a boy named Sophie is enchanted and turns 90 years old, he enters Howl's magical castle. It's a strange but cute love adventure story.
+                            </p>
+                        </div>
                     </div>
-                </a>
-
-                <a href="#">
-                    <div class="ticketbox">
-                        <img src="img/티켓3.png" alt="">
-                        <p>Enjoy kayaking in Alaska<br>and feel happiness</p>
-                        <span class="date">2022.6.14 ~ 2022.7.15</span>
-                        <span class="price">$480</span>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="ticketbox">
-                        <img src="img/티켓4.png" alt="">
-                        <p>Experience kayaking<br>on glaciers!</p>
-                        <span class="date">2022.6.14 ~ 2022.7.15</span>
-                        <span class="price">$510</span>
-                    </div>
-                </a>
+                </div>
             </div>
 
-            <a class="more" href="#">View More</a>
-        </section>
+            <div class="contentbox">
+                <div class="titlezone titlezone-second">
+                    <h2 class="h2-second">Spirited Away</h2>
+                    <h3>센과 치히로의 행방불명</h3>
+                    <span>2001</span>
+                </div>
+                
+                <div class="detailzone-second">
+                    <div class="firstbox">
+                        <img src="img/센1.png" alt="">
+                        <img src="img/센2.png" alt="">
+                    </div>
+                    <div class="secondbox">
+                        <div class="about about-second">
+                            <p>&nbsp;&nbsp;Produced by Studio Ghibli, directed by Hayao Miyazaki. It was released in Japan in 2001 and in Korea in 2002.
+                                While passing through a tunnel, my parents ate strange food and turned into pigs. Because of the incident, the girl goes to a hot spring used by the gods, and on the other hand, it is a dreamy and unique movie with a unique atmosphere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentbox">
+                <div class="titlezone">
+                    <h2 class="h2-third">My Neighbor Totoro</h2>
+                    <h3>이웃집 토토로</h3>
+                    <span>1988</span>
+                </div>
+
+                <div class="detailzone-third">
+                    <div class="firstbox">
+                        <img src="img/토토로1.png" alt="">
+                        <div class="about about-third">
+                            <p>&nbsp;&nbsp;Japanese animation directed by Hayao Miyazaki in 1988. It is a calm and heartwarming fantasy drama about a sister who moved from the city to the countryside in 1952 and Totoro, the god of country forests. A large number of Ghibli works have been updated on Netflix, and Korean dubbing is also being uploaded.
+                                I feel like I'm back to my childhood with Totoro, a cute spirit that I met in the forest of an old house in the middle of the forest. the wit of a cat bus invisible to adults It is a work that shows off its attractive characters and imagination.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="secondbox">
+                        <img src="img/토토로2.png" alt="">
+                        <img src="img/토토로3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
 
 
     <footer>
         <a href="#"><img src="img/insta.png" alt=""></a>
         <a href="#"><img src="img/face.png" alt=""></a>
         <a href="#"><img src="img/twi.png" alt=""></a>
-        <p>© Trevello. All Rights Reserved.</p>
+        <p>© 2022 Studio Ghibli. All Rights Reserved.</p>
     </footer>
 </body>
-
-<script>
-    const progressBar = document.querySelector(".container .scrollbar");
-    const bodyTag = document.querySelector("body");
-
-    document.addEventListener("scroll", function(){
-        let scrollabelHeight = bodyTag.getBoundingClientRect().height - window.innerHeight;
-        let scrollWidth = (window.scrollY/scrollabelHeight)*window.innerWidth;
-
-        progressBar.style.width = scrollWidth+"px";
-    })
-
-
-
-    const animatedTags = document.querySelectorAll("h1, h2, h3, p, a")
-    animatedTags.forEach(tag => {
-        tag.style.opacity = 0
-    })
-
-    document.addEventListener("scroll", function(){
-
-        let delay = 0.25;
-        animatedTags.forEach(tag => {
-            const tagTop = tag.getBoundingClientRect().top;
-            const tagBottom = tag.getBoundingClientRect().bottom;
-
-            if(tagTop < window.innerHeight && tagBottom > 0){
-                tag.style.animation = `fadeIn 1s ${delay}s both`;
-                delay += 0.15;
-            }else {
-                tag.style.animation = "0";
-            }
-        })
-    })
-</script>
 </html>
