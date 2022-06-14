@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio GHIBLI</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Nunito:wght@400;500&family=Podkova:wght@400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Podkova', serif;
+        }
+        
+        body {
+            background-image: url(img/back1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+
+        .container {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        h1 {
+            font-size: 60px;
+            font-weight: 400;
+            color: #444;
+            text-align: center;
+            margin-top: 160px;
+            margin-bottom: 160px;
+        }
+
+
+        .text {
+            width: 790px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 170%;
+            color: #55678a;
+            text-align: justify;
+        }
+
+
+        .contentzone {
+            width: 1055px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 248px;
+            margin-bottom: 320px;
+        }
+        .contentbox {
+            width: 100%;
+        }
+        .contentbox:not(:last-child) {
+            margin-bottom: 200px;
+        }
+
+
+        .titlezone {
+            text-align: right;
+            margin-bottom: 56px;
+        }
+        .titlezone-second {
+            text-align: left;
+        }
+        .titlezone h2 {
+            display: inline;
+            font-size: 40px;
+            font-weight: 500;
+            padding-top: 8px;
+        }
+        .titlezone .h2-first {
+            color: #615742;
+            border-top: 1px solid #8677577e;
+        }
+        .titlezone .h2-second {
+            color: #517e73;
+            border-top: 1px solid #517e737e;
+        }
+        .titlezone .h2-third {
+            color: #55678a;
+            border-top: 1px solid #55678a7e;
+        }
+        .titlezone h3 {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #555;
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+        .titlezone span {
+            font-family: 'Nunito', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        
+        .firstbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 48px;
+        }
+        .detailzone-third .firstbox {
+            align-items: initial;
+        }
+        .secondbox {
+            display: flex;
+            justify-content: space-between;
+        }
+        .detailzone-second .secondbox {
+            justify-content: baseline;
+        }
+
+
+        .detailzone-first .firstbox img:nth-child(1) {
+            height: 292px;
+        }
+        .detailzone-second .firstbox img:nth-child(2) {
+            height: 336px;
+        }
+
+
+        .about {
+            padding: 20px 24px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .about-first {
+            width: 440px;
+        }
+        .about-first:hover {
+            border-radius: 8px;
+            background-color: #e7e5e0;
+        }
+        .about-second {
+            width: 645px;
+        }
+        .about-second:hover {
+            border-radius: 8px;
+            background-color: #e1e9e7;
+        }
+        .about-third {
+            width: 439px;
+        }
+        .about-third:hover {
+            border-radius: 8px;
+            background-color: #e1e8f5;
+        }
+
+        .about p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 160%;
+            color: #333;
+            text-align: justify;
+        }
+
+        
+        footer {
+            width: 100%;
+            height: 160px;
+            background-color: #e7ded3;
+            text-align: center;
+        }
+        footer a img {
+            width: 24px;
+            margin-top: 44px;
+            border-radius: 0px;
+        }
+        footer a:not(:last-child) {
+            margin-right: 20px;
+        }
+        footer p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Masterpiece of GHIBLI</h1>
+
+        <div class="text">
+            <p>&nbsp;Studio Ghibli's animation is popular with all adults and children. Not only a solid story, but also a gem-like OST evokes innocence in everyone's hearts. Ghibli's unique beautiful colors and novel themes that evolve with the times are also the secret of "Long Run."</p>
+        </div>
+
+
+        <div class="contentzone">
+            <div class="contentbox">
+                <div class="titlezone">
+                    <h2 class="h2-first">Howl's Moving Castle</h2>
+                    <h3>하울의 움직이는 성</h3>
+                    <span>2004</span>
+                </div>
+
+                <div class="detailzone-first">
+                    <div class="firstbox">
+                        <img src="img/하울1.png" alt="">
+                        <img src="img/하울2.png" alt="">
+                    </div>
+                    <div class="secondbox">
+                        <img src="img/하울3.png" alt="">
+                        <div class="about about-first">
+                            <p>&nbsp;&nbsp;It is a 2004 animated feature film by Ghibli Studios, directed by Japanese master animator Hayao Miyazaki. It is based on a fantasy novel of the same name by British novelist Diana Win Jones. It is one of the most famous and well-known works of Ghibli, ranking sixth in Japanese box office revenue and third in global box office rankings.
+                                The OST is so good that a movie can be described as an OST. When a boy named Sophie is enchanted and turns 90 years old, he enters Howl's magical castle. It's a strange but cute love adventure story.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentbox">
+                <div class="titlezone titlezone-second">
+                    <h2 class="h2-second">Spirited Away</h2>
+                    <h3>센과 치히로의 행방불명</h3>
+                    <span>2001</span>
+                </div>
+                
+                <div class="detailzone-second">
+                    <div class="firstbox">
+                        <img src="img/센1.png" alt="">
+                        <img src="img/센2.png" alt="">
+                    </div>
+                    <div class="secondbox">
+                        <div class="about about-second">
+                            <p>&nbsp;&nbsp;Produced by Studio Ghibli, directed by Hayao Miyazaki. It was released in Japan in 2001 and in Korea in 2002.
+                                While passing through a tunnel, my parents ate strange food and turned into pigs. Because of the incident, the girl goes to a hot spring used by the gods, and on the other hand, it is a dreamy and unique movie with a unique atmosphere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentbox">
+                <div class="titlezone">
+                    <h2 class="h2-third">My Neighbor Totoro</h2>
+                    <h3>이웃집 토토로</h3>
+                    <span>1988</span>
+                </div>
+
+                <div class="detailzone-third">
+                    <div class="firstbox">
+                        <img src="img/토토로1.png" alt="">
+                        <div class="about about-third">
+                            <p>&nbsp;&nbsp;Japanese animation directed by Hayao Miyazaki in 1988. It is a calm and heartwarming fantasy drama about a sister who moved from the city to the countryside in 1952 and Totoro, the god of country forests. A large number of Ghibli works have been updated on Netflix, and Korean dubbing is also being uploaded.
+                                I feel like I'm back to my childhood with Totoro, a cute spirit that I met in the forest of an old house in the middle of the forest. the wit of a cat bus invisible to adults It is a work that shows off its attractive characters and imagination.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="secondbox">
+                        <img src="img/토토로2.png" alt="">
+                        <img src="img/토토로3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="#"><img src="img/insta.png" alt=""></a>
+        <a href="#"><img src="img/face.png" alt=""></a>
+        <a href="#"><img src="img/twi.png" alt=""></a>
+        <p>© 2022 Studio Ghibli. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
